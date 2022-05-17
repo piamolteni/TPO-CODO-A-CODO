@@ -1,0 +1,81 @@
+/*---------- HEADER ----------*/
+
+.header{
+    @include mensaje(100%, 150px , center );
+    position: fixed;
+    display: flex;    
+    flex-direction: column;
+    background-color: #c7e2c3;
+    font-size: 14px;
+    z-index: 4;
+    
+}
+
+/* modal carrito  */ 
+.headerCarrito{
+    width: 100%;
+    height: 10%;
+    margin-left: 20px;
+    margin-top:10px;
+    text-transform: uppercase;
+
+ 
+    a:link  {
+    color:rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor:pointer;
+    }
+
+    a:hover{
+    color: white;
+    text-decoration: none;
+
+    }
+
+    a:visited{
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer;
+    }
+}
+
+.headerRegistroBorder{
+    border-right: 1px solid rgba(0, 0, 0, 0.2); 
+    padding-right: 5px;
+}
+
+
+
+/* titulo Lizon March Deco */ 
+.headerTitulo{
+    width: 100%;
+    height: 60%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: $font_principal_color;
+    
+    
+    a:link{
+        font-size: 50px;
+        text-decoration: none;
+    
+    }
+
+    a:hover{
+        font-size: 60px;
+        transition: 0.2s 0.2s;
+        text-decoration: none;
+    }
+
+    a:visited{
+        font-size: 50px;
+        text-decoration: none;
+        color: $font_principal_color;
+    } 
+}
+
+/*-------------------------------------------------------------*/

@@ -1,0 +1,71 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@import "base/reset";
+
+@import "components/buttons";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/forms";
+
+@import "views/index";
+@import "views/preguntasFrecuentes";
+@import "views/productos";
+
+@import "utilities/mediaQueries";
+
+
+
+
+
+
+
+
+/*container bootstrap en todas las pages*/ 
+.container{
+    width: 100%;
+    padding-bottom: 20px;
+    height: auto;
+}
+
+.containerProductos {
+    width: 100%;
+    padding-bottom: 20px;
+    height: auto;
+    margin: 0;
+}
+
+
+
+
+
+/*  ----------------titulo en cada pagina -----------------*/
+
+.tituloPagina {
+    text-align:left;
+    font-size: 20px;
+
+    
+    a:link{
+    text-decoration: none;
+    color: rgba(83, 81, 81, 0.712);
+    font-size: 20px;
+}
+    a:visited{
+    text-decoration: none;
+    color: rgba(83, 81, 81, 0.712);
+    font-size: 20px;
+}
+
+    a:hover{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+
+}
+
+
+/*-------------------------------------------------------------*/

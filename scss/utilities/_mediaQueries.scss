@@ -1,0 +1,414 @@
+/*----------MEDIA QUERIES----------*/
+
+/**********************pantallas XL************************/
+
+
+@media only screen and (max-width: 1024px) {
+    
+    /****HEADER****/
+    .headerMenu{
+        width: 50%;
+        height: 10%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size:14px;
+
+    }
+
+    // boton agregar al carrito en page productos
+
+    .button {
+        margin-left: 0px;
+    }
+
+}
+
+/**********************pantallas L************************/
+
+@media only screen and (max-width: 992px) {
+    
+    /****HEADER****/
+    .headerMenu{
+        width: 70%;
+        height: 10%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size:14px;
+
+    }
+
+    /****MAIN INDEX****/
+    .campoInput{
+        padding:10px;
+        width: 55%;
+        margin:5px;
+        text-transform: uppercase;
+        font-style: oblique;
+        font-size: 12px;
+    
+    }
+    /****FOOTER****/ 
+    .footerMenu{
+        width: 60%;
+        height: 10%;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+
+
+    
+
+    /**** FORMULARIO CONTACTO****/ 
+    .campoSubmit{
+        width: 15%;
+        margin: 5px;   
+        padding: 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+
+    .form{
+        width: 80%;
+        margin: 20px;
+        margin-left: 40px;
+        padding: 30px;
+        padding-left: 45px;
+        font-size: 20px;
+        background-color: white;
+        
+    }      
+
+
+    .card-title{
+        font-size: 14px;
+    }
+    
+    .card-text{
+        font-size: 13px;
+    }
+
+
+    //modal input cantidad de productos
+
+    .input__element{
+    width: 40%;
+
+    }
+
+    // boton agregar al carrito en page productos
+    .button {
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    
+}
+
+/********************pantallas M************************/
+@media only screen and (max-width: 768px) {
+    /****HEADER ****/
+    .headerMenu{
+        width: 80%;
+        height: 10%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size:14px;
+
+    }
+
+    
+   
+    /****MAIN INDEX****/
+    .campoInput{
+        width: 55%;
+        margin:5px;
+        padding:10px;
+        text-transform: uppercase;
+        font-style: oblique;
+        font-size: 12px;
+    
+    }
+    
+    .campoSubmit{
+        width: 33%;
+        padding: 8px;
+        margin: 5px;   
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+
+    /****FOOTER****/
+    .footerMenu{
+        width: 80%;
+        height: 10%;
+        margin-bottom: 10px;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+
+     /****FORMULARIO CONTACTO****/
+     .form{
+        width: 100%;
+        margin: 3px;
+        margin-left: 20px;
+        padding: 15px;
+        font-size: 20px;
+        background-color: white;
+        
+    }      
+ 
+     .mainFormulario{
+         width: 100%;
+         margin:20px;
+         align-self: center;
+
+    }
+    /* PAGE PRODUCTOS */
+
+    h3{
+        font-size: 16px;
+    }
+
+}
+
+/*******************pantallas S***************************/
+
+@media only screen and (max-width: 576px) {
+    /****HEADER****/
+
+    .headerRegistro{
+        width: 100%;
+        height: 20%;
+        margin-left: 20px;
+        margin-top:10px;
+        font-size: 10px;
+    
+    }
+
+    .headerMenu{
+        width: 90%;
+        height: 10%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size:10px;
+
+    }
+
+    ol, ul{
+        padding-left: 0;
+    }
+
+    .headerTitulo{
+        width: 100%;
+        height: 60%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: center;
+        color:rgb(100, 98, 98);
+        text-transform: uppercase;
+        
+        a:link{
+            text-align: center;
+            transition: 0.1s 0.2s;
+            text-transform: uppercase;
+            text-decoration: none;
+            color:rgb(100, 98, 98);
+            font-size: 35px;
+        }
+    }
+
+    /****FOOTER****/
+
+    .footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: #e6e3df;
+        font-size: 12px;
+    
+    }
+    
+
+    .footerMenu{
+        width: 100%;
+        height: 10%;
+        margin-bottom: 10px;
+        padding-right: 25px;
+        padding-left: 15px;
+        align-items: center;
+        justify-content:space-evenly;
+        font-size: 10px;
+
+    }
+
+    .footerInfo{
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        align-items: center;
+        font-size: 10px;
+    
+    }
+
+    .footerInfo2{
+        font-size: 10px;
+    }
+
+    i {
+        padding: 8px;    
+        font-size: 25px;
+        align-self: center;
+    }
+
+    /****MAIN INDEX****/
+     .main{
+        display: flex;
+        width: 100%;
+        padding-top: 169px;
+        padding-bottom: 30px;
+        font-size: 12px;
+
+
+    }
+
+    .campoInput{
+        width: 55%;
+        padding:8px;
+        margin:8px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-style: oblique;
+    
+    }
+    
+    .campoSubmit{
+        padding: 8px;
+        width: 33%;
+        margin: 5px;   
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .imagen1{
+        height: 200px;
+        width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .mainTitulo{
+        padding: 13px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .mainPages{
+        display: flex;
+        flex-direction: column;
+        padding-top: 169px;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 60px;
+    }
+
+    .container{
+        font-size: 14px;
+    }
+
+
+    .tituloPagina{
+        font-size: 15px;
+    }
+
+    .mainArticle{
+        font-size: 14px;
+        padding: 20px 20px 20px 0;
+    }
+    
+    label {
+        display:inline;
+    }
+    /****FORMULARIO CONTACTO****/
+    
+    .form{
+       font-size: 16px;
+       background-color: white;
+       padding: 15px;
+       width: 100%;
+       margin: 20px;
+       margin-left: 20px;
+
+    }      
+
+    .mainFormulario{
+        align-self: center;
+        width: 100%;
+    }
+
+    
+    .labelForm{
+        font-size: 16px;
+    }
+
+    .inputButtom{
+        font-size: 12px;
+    }
+
+    .inputForm{
+        font-size: 12px;
+    }
+    .btn-primary{
+        font-size: 12px;
+    }
+
+    .btn-secondary{
+        font-size: 12px;
+    }
+    
+    
+    /****TABLA DE MEDIDAS****/
+    .tablaMedidas{
+        width: 100%;
+    }
+
+    tbody{
+        width: 100%;
+        font-size: 8px;
+    }
+
+    /****PAGINA PRODUCTOS****/
+    
+    .contenedor{
+        padding-left: 0;
+    }
+
+    /****CARRITO DE COMPRAS ***/
+
+    .imgCart{
+        height: 150px;
+    }
+
+    .tablePrice{
+        font-size: 14px;
+    }
+
+    .tableCant{
+        font-size: 14px;
+    }
+    
+    .modal-title{
+        font-size: 16px;
+    }
+}
+
+/*-------------------------------------------------------------*/

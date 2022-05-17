@@ -1,0 +1,673 @@
+/*----------BASE DE PAGINAS----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  color: #646262;
+  background-color: #EFF1ED; }
+
+/*-------------------------------------------------------------*/
+/*botones de formularios */
+.btn-primary {
+  background-color: #dbc8b5;
+  border-color: white;
+  display: block; }
+
+.btn-primary:hover {
+  background-color: #b19a84;
+  border-color: white; }
+
+/*boton de acordion en page preguntas frecuentes*/
+.accordion-button:not(.collapsed) {
+  background-color: #EFF1ED;
+  color: #646262;
+  border-color: white;
+  box-shadow: 0 0 0 0.10rem; }
+
+.accordion-button:focus {
+  color: #646262;
+  border-color: white;
+  background-color: #dbc8b5;
+  box-shadow: 0 0 0 0.10rem; }
+
+/*boton carrito*/
+#carrito1 {
+  font-size: 23px;
+  float: right;
+  padding: 0; }
+
+#btnCarrito {
+  background-color: #dbc8b5;
+  border-color: white;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+  float: right; }
+
+.alert {
+  z-index: 4; }
+
+.hide {
+  display: none; }
+
+.input__element {
+  width: 30%; }
+
+.button {
+  margin-left: 30px; }
+
+/*-------------------------------------------------------------*/
+/*---------- HEADER ----------*/
+.header {
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #c7e2c3;
+  font-size: 14px;
+  z-index: 4; }
+
+/* modal carrito  */
+.headerCarrito {
+  width: 100%;
+  height: 10%;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-transform: uppercase; }
+  .headerCarrito a:link {
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer; }
+  .headerCarrito a:hover {
+    color: white;
+    text-decoration: none; }
+  .headerCarrito a:visited {
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer; }
+
+.headerRegistroBorder {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 5px; }
+
+/* titulo Lizon March Deco */
+.headerTitulo {
+  width: 100%;
+  height: 60%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #646262; }
+  .headerTitulo a:link {
+    font-size: 50px;
+    text-decoration: none; }
+  .headerTitulo a:hover {
+    font-size: 60px;
+    transition: 0.2s 0.2s;
+    text-decoration: none; }
+  .headerTitulo a:visited {
+    font-size: 50px;
+    text-decoration: none;
+    color: #646262; }
+
+/*-------------------------------------------------------------*/
+/*menu de navegacion header y footer*/
+.headerMenu, .footerMenu {
+  width: 40%;
+  height: 10%;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .headerMenu ul, .footerMenu ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    list-style: none; }
+  .headerMenu a:link, .footerMenu a:link {
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer; }
+  .headerMenu a:visited, .footerMenu a:visited {
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer; }
+  .headerMenu a:hover, .footerMenu a:hover {
+    color: white; }
+
+/* menu footer */
+.footerMenu {
+  width: 45%;
+  height: 0;
+  margin-top: 8px;
+  font-size: 14px; }
+
+/*-------------------------------------------------------------*/
+/*---------- FOOTER ----------*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #e6e3df;
+  z-index: 1; }
+
+.footerInfo {
+  display: flex;
+  flex-direction: row;
+  width: 74%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px; }
+
+.footerInfo2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  align-items: center; }
+  .footerInfo2 a:link {
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer; }
+  .footerInfo2 a:visited {
+    color: rgba(83, 81, 81, 0.712);
+    text-decoration: none;
+    cursor: pointer; }
+  .footerInfo2 a:hover {
+    color: white; }
+
+i {
+  padding: 20px;
+  align-self: center;
+  font-size: 30px; }
+
+/*-------------------------------------------------------------*/
+/*----------FORMULARIOS----------*/
+/*formulario para suscribirse a Newsletter*/
+.mainForm {
+  width: 100%;
+  padding: 10px;
+  text-align: center; }
+
+.campoInput, .campoSubmit {
+  width: 50%;
+  padding: 15px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-style: oblique;
+  font-size: 15px; }
+
+.campoSubmit {
+  width: 12%;
+  font-size: 12px; }
+
+/*formulario pagina de contacto*/
+.mainPages {
+  display: flex;
+  flex-direction: column;
+  padding-top: 169px;
+  padding-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 18px; }
+
+.mainFormulario {
+  width: 60%;
+  align-self: center; }
+
+.form {
+  width: 80%;
+  margin: 20px;
+  margin-left: 40px;
+  padding: 30px;
+  padding-left: 50px;
+  background-color: rgba(255, 255, 255, 0.747);
+  font-size: 20px; }
+
+.inputForm {
+  display: block;
+  width: 90%;
+  padding: 5px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px; }
+
+.inputButtom, .labelForm {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #dbc8b5; }
+
+.labelForm {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.747); }
+
+/*-------------------------------------------------------------*/
+/* ---------- INDEX----------*/
+/*Main*/
+.main {
+  display: flex;
+  width: 100%;
+  padding-top: 169px;
+  padding-bottom: 30px;
+  font-size: 16px; }
+
+.mainSection {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-style: oblique; }
+
+.mainArticle {
+  padding: 20px;
+  text-decoration: none; }
+
+.mainLista {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  list-style: decimal;
+  text-align: start; }
+
+/*imagenes del index*/
+.imagen1 {
+  height: 300px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden; }
+
+/*titulo suscribirse a newsletter*/
+.mainTitulo {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px; }
+
+/*-------------------------------------------------------------*/
+/*----------PAGE PREGUNTAS FRECUENTES ----------*/
+/*tabla de medidas*/
+.tablaMedidas {
+  width: 45%;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  border-collapse: collapse;
+  color: #4d4b4b; }
+  .tablaMedidas td {
+    padding: 5px;
+    border: grey 2px solid;
+    font-size: 14px; }
+  .tablaMedidas th {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: grey solid 2px;
+    font-size: 15px;
+    color: #383636; }
+
+/*-------------------------------------------------------------*/
+/*---------- PAGE PRODUCTOS----------*/
+/*titulo*/
+h3 {
+  font-size: 18px; }
+
+/*filtro*/
+.filtrosProductos {
+  float: left;
+  padding: 30px 0 0 0; }
+
+.filtro a:link {
+  color: rgba(48, 47, 47, 0.712);
+  text-decoration: none;
+  cursor: pointer; }
+
+.filtro a:visited {
+  color: rgba(61, 60, 60, 0.712);
+  text-decoration: none;
+  cursor: pointer; }
+
+.filtro a:hover {
+  color: rgba(26, 24, 24, 0.103); }
+
+/*imagenes productos*/
+.card-title {
+  text-align: center;
+  font-size: 18px; }
+
+.card-text {
+  text-align: center; }
+
+/*contenedor*/
+.contenedor {
+  width: 100%;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-top: 169px;
+  padding-bottom: 20px;
+  font-size: 14px; }
+
+.card {
+  padding-top: 12px; }
+
+/*carrito*/
+.row {
+  padding: 20px;
+  align-items: flex-end; }
+
+.tableProducts {
+  height: auto; }
+
+.title {
+  padding: 20px; }
+
+/*-------------------------------------------------------------*/
+/*----------MEDIA QUERIES----------*/
+/**********************pantallas XL************************/
+@media only screen and (max-width: 1024px) {
+  /****HEADER****/
+  .headerMenu, .footerMenu {
+    width: 50%;
+    height: 10%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px; }
+  .button {
+    margin-left: 0px; } }
+
+/**********************pantallas L************************/
+@media only screen and (max-width: 992px) {
+  /****HEADER****/
+  .headerMenu, .footerMenu {
+    width: 70%;
+    height: 10%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px; }
+  /****MAIN INDEX****/
+  .campoInput, .campoSubmit {
+    padding: 10px;
+    width: 55%;
+    margin: 5px;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 12px; }
+  /****FOOTER****/
+  .footerMenu {
+    width: 60%;
+    height: 10%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-evenly; }
+  /**** FORMULARIO CONTACTO****/
+  .campoSubmit {
+    width: 15%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 10px;
+    text-transform: uppercase; }
+  .form {
+    width: 80%;
+    margin: 20px;
+    margin-left: 40px;
+    padding: 30px;
+    padding-left: 45px;
+    font-size: 20px;
+    background-color: white; }
+  .card-title {
+    font-size: 14px; }
+  .card-text {
+    font-size: 13px; }
+  .input__element {
+    width: 40%; }
+  .button {
+    margin-left: 0px;
+    font-size: 12px; } }
+
+/********************pantallas M************************/
+@media only screen and (max-width: 768px) {
+  /****HEADER ****/
+  .headerMenu, .footerMenu {
+    width: 80%;
+    height: 10%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 14px; }
+  /****MAIN INDEX****/
+  .campoInput, .campoSubmit {
+    width: 55%;
+    margin: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 12px; }
+  .campoSubmit {
+    width: 33%;
+    padding: 8px;
+    margin: 5px;
+    text-transform: uppercase;
+    font-size: 10px; }
+  /****FOOTER****/
+  .footerMenu {
+    width: 80%;
+    height: 10%;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: center; }
+  /****FORMULARIO CONTACTO****/
+  .form {
+    width: 100%;
+    margin: 3px;
+    margin-left: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: white; }
+  .mainFormulario {
+    width: 100%;
+    margin: 20px;
+    align-self: center; }
+  /* PAGE PRODUCTOS */
+  h3 {
+    font-size: 16px; } }
+
+/*******************pantallas S***************************/
+@media only screen and (max-width: 576px) {
+  /****HEADER****/
+  .headerRegistro {
+    width: 100%;
+    height: 20%;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 10px; }
+  .headerMenu, .footerMenu {
+    width: 90%;
+    height: 10%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 10px; }
+  ol, ul {
+    padding-left: 0; }
+  .headerTitulo {
+    width: 100%;
+    height: 60%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #646262;
+    text-transform: uppercase; }
+    .headerTitulo a:link {
+      text-align: center;
+      transition: 0.1s 0.2s;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #646262;
+      font-size: 35px; }
+  /****FOOTER****/
+  .footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #e6e3df;
+    font-size: 12px; }
+  .footerMenu {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10px; }
+  .footerInfo {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 10px; }
+  .footerInfo2 {
+    font-size: 10px; }
+  i {
+    padding: 8px;
+    font-size: 25px;
+    align-self: center; }
+  /****MAIN INDEX****/
+  .main {
+    display: flex;
+    width: 100%;
+    padding-top: 169px;
+    padding-bottom: 30px;
+    font-size: 12px; }
+  .campoInput, .campoSubmit {
+    width: 55%;
+    padding: 8px;
+    margin: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-style: oblique; }
+  .campoSubmit {
+    padding: 8px;
+    width: 33%;
+    margin: 5px;
+    font-size: 10px;
+    text-transform: uppercase; }
+  .imagen1 {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px; }
+  .mainTitulo {
+    padding: 13px;
+    text-align: center;
+    font-size: 15px; }
+  .mainPages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 169px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 60px; }
+  .container {
+    font-size: 14px; }
+  .tituloPagina {
+    font-size: 15px; }
+  .mainArticle {
+    font-size: 14px;
+    padding: 20px 20px 20px 0; }
+  label {
+    display: inline; }
+  /****FORMULARIO CONTACTO****/
+  .form {
+    font-size: 16px;
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    margin: 20px;
+    margin-left: 20px; }
+  .mainFormulario {
+    align-self: center;
+    width: 100%; }
+  .labelForm {
+    font-size: 16px; }
+  .inputButtom, .labelForm {
+    font-size: 12px; }
+  .inputForm {
+    font-size: 12px; }
+  .btn-primary {
+    font-size: 12px; }
+  .btn-secondary {
+    font-size: 12px; }
+  /****TABLA DE MEDIDAS****/
+  .tablaMedidas {
+    width: 100%; }
+  tbody {
+    width: 100%;
+    font-size: 8px; }
+  /****PAGINA PRODUCTOS****/
+  .contenedor {
+    padding-left: 0; }
+  /****CARRITO DE COMPRAS ***/
+  .imgCart {
+    height: 150px; }
+  .tablePrice {
+    font-size: 14px; }
+  .tableCant {
+    font-size: 14px; }
+  .modal-title {
+    font-size: 16px; } }
+
+/*-------------------------------------------------------------*/
+/*container bootstrap en todas las pages*/
+.container {
+  width: 100%;
+  padding-bottom: 20px;
+  height: auto; }
+
+.containerProductos {
+  width: 100%;
+  padding-bottom: 20px;
+  height: auto;
+  margin: 0; }
+
+/*  ----------------titulo en cada pagina -----------------*/
+.tituloPagina {
+  text-align: left;
+  font-size: 20px; }
+  .tituloPagina a:link {
+    text-decoration: none;
+    color: rgba(83, 81, 81, 0.712);
+    font-size: 20px; }
+  .tituloPagina a:visited {
+    text-decoration: none;
+    color: rgba(83, 81, 81, 0.712);
+    font-size: 20px; }
+  .tituloPagina a:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; }
+
+/*-------------------------------------------------------------*/

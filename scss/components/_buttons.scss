@@ -1,0 +1,78 @@
+
+/*botones de formularios */ 
+
+.btn-primary{
+    background-color: $color_botones;
+    border-color: white;
+    display: block;
+}
+
+.btn-primary:hover{
+    background-color: $color_botones_hover;
+    border-color: white;
+
+}
+ 
+/*boton de acordion en page preguntas frecuentes*/
+
+.accordion-button:not(.collapsed){
+    background-color: #EFF1ED;
+    color: $font_principal_color;
+    border-color: white;
+    box-shadow: 0 0 0 0.10rem;    
+}
+
+
+
+.accordion-button:focus{
+    color: $font_principal_color;
+    border-color: white;
+    background-color: $color_botones;
+    box-shadow: 0 0 0 0.10rem;    
+}
+
+/*boton carrito*/
+
+#carrito1{
+    font-size: 23px;
+    float: right;
+    padding: 0;
+}
+
+
+#btnCarrito{
+    background-color: $color_botones;
+    border-color: white;
+    padding: 10px;
+    margin: 0 20px 0 20px;  
+    float:right;
+}
+
+
+//alerta compra
+
+.alert{
+    z-index: 4;
+}
+.hide {
+    display: none;
+}
+
+// modal input cantidad productos
+
+
+.input__element{
+    width: 30%;
+
+    }
+
+
+
+// boton agregar al carrito en page productos
+
+.button {
+    margin-left: 30px;
+}
+
+
+/*-------------------------------------------------------------*/

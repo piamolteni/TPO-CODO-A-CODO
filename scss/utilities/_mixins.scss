@@ -1,0 +1,6 @@
+
+@mixin mensaje ($anchofondo, $altofondo, $posiciontexto){
+    width: $anchofondo;
+    height: $altofondo;
+    align-items: $posiciontexto;
+}

@@ -1,0 +1,49 @@
+/*menu de navegacion header y footer*/
+
+.headerMenu{
+    width: 40%;
+    height: 10%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+
+    ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        list-style: none;
+    }
+
+    a:link{
+        color: rgba(83, 81, 81, 0.712);
+        text-decoration: none;
+        cursor:pointer;
+    }
+
+    a:visited{
+        color:rgba(83, 81, 81, 0.712);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover{
+        color: white;
+    }
+}
+
+
+/* menu footer */
+.footerMenu{
+    @extend .headerMenu;
+    width: 45%;
+    height: 0;
+    margin-top: 8px;
+    font-size: 14px;
+
+
+   
+}
+
+/*-------------------------------------------------------------*/

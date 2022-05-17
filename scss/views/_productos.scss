@@ -1,0 +1,72 @@
+/*---------- PAGE PRODUCTOS----------*/
+
+/*titulo*/
+h3{
+    font-size: 18px;
+}
+
+/*filtro*/
+
+.filtrosProductos{
+    float: left;
+    padding: 30px 0 0 0;
+}
+
+.filtro{
+
+
+    a:link{
+        color: rgba(48, 47, 47, 0.712);
+        text-decoration: none;
+        cursor:pointer;
+    }
+
+    a:visited{
+        color:rgba(61, 60, 60, 0.712);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover{
+        color: rgba(26, 24, 24, 0.103);
+    }
+}
+
+/*imagenes productos*/
+.card-title{
+    text-align: center;
+    font-size: 18px;
+}
+.card-text{
+    text-align: center;
+}
+
+/*contenedor*/ 
+.contenedor{
+    width: 100%; 
+    margin-right: auto;
+    padding-left: 20px;
+    padding-top: 169px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    
+}
+
+.card {
+    padding-top: 12px;
+}
+/*carrito*/
+
+.row{
+    padding: 20px;
+    align-items: flex-end;
+
+}
+
+.tableProducts{
+    height: auto;
+}
+.title{
+    padding: 20px;
+}
+/*-------------------------------------------------------------*/
