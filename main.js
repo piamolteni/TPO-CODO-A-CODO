@@ -224,7 +224,7 @@ $('.filtro[category="all"]').click(function(){
 
 
 //FORMULARIO AJAX PARA LA PAGE CONTACTANOS 
-
+/*
 var form = document.getElementById("myForm");
 
 async function handleSubmit(event) {
@@ -246,9 +246,17 @@ async function handleSubmit(event) {
 
 
     form.addEventListener("submit", handleSubmit)
-}
+}*/
 
-    
+const email = document.getElementById("correo_electronico");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
 
 
 ///// PROCESO PAGO 
