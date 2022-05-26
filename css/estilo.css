@@ -35,16 +35,18 @@ body {
 
 /*boton carrito*/
 #carrito1 {
-  font-size: 23px;
+  font-size: 20px;
   float: right;
   padding: 0; }
 
 #btnCarrito {
   background-color: #dbc8b5;
   border-color: white;
+  height: 22%;
   padding: 10px;
   margin: 0 20px 0 20px;
-  float: right; }
+  float: right;
+  align-self: flex-end; }
 
 .alert {
   z-index: 4; }
@@ -96,7 +98,7 @@ body {
 
 .headerRegistro {
   width: 100%;
-  height: 20%;
+  height: 10%;
   margin-left: 20px;
   margin-top: 10px;
   text-transform: uppercase; }

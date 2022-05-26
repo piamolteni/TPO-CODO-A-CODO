@@ -34,7 +34,7 @@
 /*boton carrito*/
 
 #carrito1{
-    font-size: 23px;
+    font-size: 20px;
     float: right;
     padding: 0;
 }
@@ -43,9 +43,11 @@
 #btnCarrito{
     background-color: $color_botones;
     border-color: white;
+    height: 22%;
     padding: 10px;
     margin: 0 20px 0 20px;  
     float:right;
+    align-self: flex-end;
 }
 
 
