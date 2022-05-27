@@ -222,43 +222,27 @@ $('.filtro[category="all"]').click(function(){
 });
 
 
+///// VALIDACION FORMULARIO //////////
 
-//FORMULARIO AJAX PARA LA PAGE CONTACTANOS 
-/*
-var form = document.getElementById("myForm");
-
-async function handleSubmit(event) {
-    event.preventDefault();
-    let status = document.getElementById("myFormStatus");
-    let data = new FormData(event.target);
-    fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then( () => {
-        status.innerHTML = "Gracias por su mensaje!";
-        form.reset()
-    }).catch( () => {
-        status.innerHTML = "Hubo un error al enviar su mensaje. Intente nuevamente"
-    });
-
-
-    form.addEventListener("submit", handleSubmit)
-}*/
-
-const email = document.getElementById("correo_electronico");
-
-email.addEventListener("input", function (event) {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
-  } else {
-    email.setCustomValidity("");
-  }
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("myForm").addEventListener("submit", validarFormulario);
 });
 
-
+function validarFormulario(evento) {
+    evento.preventDefault(); //Evita que se envie el formulario
+    let nombre = document.getElementById('nombre').value;
+    if (nombre.length == 0) {
+        alert('No has escrito nada en el usuario');
+        return;
+    }
+    let apellido = document.getElementById('apellido').value;
+    if (apellido.length == 0) {
+        alert('No escribio apellido');
+        return;
+    }
+    this.submit();
+}
+   
 ///// PROCESO PAGO 
 
 $('.pago').click(() => {
@@ -275,6 +259,7 @@ $('.pago').click(() => {
 
 
 //////////////////////////////////////////////////
+//pruebas para hacer a futuro//
 /*
 
 
@@ -340,5 +325,3 @@ if (medioDePago.toLowerCase() == "credito") {
 }
 
 */
-
-

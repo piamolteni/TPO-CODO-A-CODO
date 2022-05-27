@@ -42,14 +42,14 @@
         <h2 class="tituloPagina"><a href="../index.html">Inicio </a>/ Contacto</h2>
 
         <div class="mainFormulario">
-            <form id="myForm" action="https://formspree.io/f/moqyrjwa"  method="POST">
+            <form id="myForm" onsubmit="return validar();" action="https://formspree.io/f/moqyrjwa"  method="POST"  >
                 <fieldset class="form">
                     <label for="nombre" class="labelForm">Nombre:</label>
-                    <input type="text" class="inputForm" name="nombre" id="nombre" required />
+                    <input type="text" class="inputForm" name="nombre" id="nombre">
                     <label for="apellido" class="labelForm">Apellido:</label>
-                    <input type="text" class="inputForm" name="apellido" id="apellido" required />
+                    <input type="text" class="inputForm" name="apellido" id="apellido"  />
                     <label for="correo_electronico" class="labelForm">Correo electronico:</label>
-                    <input type="email" class="inputForm" name="correo_electronico" id="correo_electronico" 
+                    <input type="email" class="inputForm" name="correo_electronico" id="correo_electronico"  
                         placeholder="ejemplo@ejemplo.com" />
                     <label class="labelForm">Mensaje:</label>
                     <textarea name="Mensaje" class="inputForm" id="Mensaje" cols="70" rows="10"></textarea><br>
@@ -97,6 +97,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+        <script src="../main.js"></script>
+
 </body>
 
 </html>
